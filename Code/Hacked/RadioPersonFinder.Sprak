@@ -1,7 +1,11 @@
-var c = Connect("PoliceOfficeInterior_MinistryOfficeWorkstationComputer_1")
+var peopleFinder = Connect("PoliceOfficeInterior_MinistryOfficeWorkstationComputer_1")
+var name = "Pixie"
+# var name = "Ivan"
+# var name = "Monad"
+# var name = "Sebastian"
+var target = peopleFinder.GetPosition(name)
+Print("Target's position " + target)
 
-Print(c.GetPosition("Pixie"))
+## Doesn't work
+# string msg = SetWorldPosition(target)
 
-# Ivan
-# Monad
-# Sebastian

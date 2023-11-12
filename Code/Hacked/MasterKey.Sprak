@@ -1,0 +1,26 @@
+var store = [-1, 0, 13, 344, 666, 1111, 1234, 1337, 2358, 4991, 5611, 7471, 7472, 9788, 34711, 45914, 54321, 112358, 424242, 38984312]
+#Toggle(1111)#original code
+
+Lockpick()
+
+void Lockpick()
+  if Dictionary(store) == false
+    
+    loop from 1 to 99999
+      if Unlock(@) == true     
+        Unlock(@+1)
+        break
+      end
+    end
+  end
+end
+
+bool Dictionary(var store)
+  loop store
+    if Toggle(@) == true
+      return true
+    end
+  end
+  
+  return false
+end

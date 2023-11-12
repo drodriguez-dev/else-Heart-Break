@@ -1,13 +1,12 @@
-string msg = SetWorldPosition("Lodge_Room2", 20, 13)
+Print(Position())
 
 # string msg = SetWorldPosition("Hotel_Exterior", 41, 35)
-
+# string msg = SetWorldPosition("Hotel_Room1", 16, 8) # Seb's room
+string msg = SetWorldPosition("Lodge_Room1", 16, 16)
+# string msg = SetWorldPosition("Lodge_Room2", 20, 13)
 # string msg = SetWorldPosition("Internet", 396, -43) # Ivan's location
-
 # string msg = SetWorldPosition("Internet", 184, 394)
-
 # string msg = SetWorldPosition("Internet", 394, -50)
-
 # string msg = SetWorldPosition("SecretArcade", 1, 1) # :)
 
 Print(msg)
